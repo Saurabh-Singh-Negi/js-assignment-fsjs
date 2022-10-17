@@ -18,11 +18,30 @@ const faqData = [
   },
 ];
 
-const accordianBody;
+const accordianBody = document.querySelector(".accordian_body");
+
+
 const faqs = [];
 
+const faq = document.createElement("div");
+const faq_header = document.createElement("div");
+const heading = document.createElement("h3");
+const show_btn = document.createElement("button");
+const para = document.createElement("p");
+
+show_btn.innerText = "+";
+// heading.classList.add("faq");
+
+faq_header.appendChild(heading);
+faq_header.appendChild(show_btn);
+
+faq.appendChild(heading);
+accordianBody.appendChild(faq);
+
+
+
 function showFaq() {
-  
+
 }
 
 function createFaq() {
