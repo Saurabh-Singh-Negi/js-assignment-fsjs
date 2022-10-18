@@ -17,5 +17,14 @@
   </body>
   <script>
     //code here
+    const output = document.getElementById("output");
+    const input = document.getElementById("input");
+    function update() {
+      output.innerText = input.value;
+
+      if(output.innerText == "") {
+        output.innerText = "Input Box Is Empty... Start Typing";
+      }
+    }
   </script>
 </html>
